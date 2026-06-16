@@ -646,8 +646,8 @@ p {
 }
 
 .camilo-img {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   border: 3px solid var(--color-accent);
   object-fit: cover;
@@ -772,8 +772,8 @@ p {
 }
 
 .about-camilo img {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   border: 2px solid var(--color-accent);
   object-fit: cover;
@@ -1401,6 +1401,11 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+  .camilo-img {
+    width: 150px;
+    height: 150px;
   }
 
   .social-links {
