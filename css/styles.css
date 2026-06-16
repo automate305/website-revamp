@@ -242,6 +242,11 @@ p {
   flex-shrink: 0;
 }
 
+/* Hide the CTA li inside nav-links on desktop — nav-cta handles it */
+.nav-links li:last-child {
+  display: none;
+}
+
 /* Hamburger button */
 .hamburger {
   display: none;
@@ -653,6 +658,25 @@ p {
   object-fit: cover;
   margin: 0 auto var(--space-md);
   display: block;
+  background: var(--color-card-dark);
+  /* Hides broken alt-text when image is missing */
+  font-size: 0;
+  color: transparent;
+}
+
+/* Placeholder shown when photo hasn't been added yet */
+.camilo-img-placeholder {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid var(--color-accent);
+  background: var(--color-card-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-md);
+  font-size: 72px;
+  line-height: 1;
 }
 
 .camilo-quote {
@@ -771,13 +795,23 @@ p {
   margin-top: var(--space-lg);
 }
 
-.about-camilo img {
+.about-camilo img,
+.about-camilo-placeholder {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   border: 2px solid var(--color-accent);
   object-fit: cover;
   flex-shrink: 0;
+}
+
+.about-camilo-placeholder {
+  background: var(--color-card-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  line-height: 1;
 }
 
 .about-camilo-text h4 {
@@ -1338,11 +1372,20 @@ p {
     display: none;
   }
 
-  /* Hide nav-cta in normal flow; show as part of mobile dropdown */
+  /* Mobile: show the CTA li inside the dropdown */
+  .nav-links li:last-child {
+    display: list-item;
+  }
+
   .nav-links .btn-primary {
     margin: var(--space-sm) var(--space-md);
     text-align: center;
     display: block;
+  }
+
+  /* Hide the standalone nav-cta on mobile */
+  .nav-cta {
+    display: none;
   }
 
   /* Hero */
