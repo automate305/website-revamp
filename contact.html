@@ -3,238 +3,335 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — Automate305</title>
-  <meta name="description" content="Book a free strategy call with Camilo, founder of Automate305. Miami AI automation for HVAC companies and SMBs." />
+  <title>Contact | Automate305 — Book a Free Audit with Camilo</title>
+  <meta name="description" content="Book a free 30-minute workflow audit with Camilo. No pitch — just a map of where your HVAC business is losing revenue." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="nav">
+  <!-- =============================================
+       Navigation
+       ============================================= -->
+  <nav class="nav" id="main-nav" aria-label="Main navigation">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <span class="bolt">⚡</span>AUTOMATE<span class="purple">305</span>
+      <a href="index.html" class="logo" aria-label="Automate305 home">
+        AUTOMATE<span class="purple">305</span> ⚡
       </a>
-      <button class="nav-hamburger" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="proof.html">Proof</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li>
+          <a
+            href="https://cal.com/automate305/30min"
+            target="_blank"
+            rel="noopener"
+            class="btn-primary"
+            style="padding: 10px 18px; font-size: 14px;"
+          >
+            Book a Free Audit
+          </a>
+        </li>
+      </ul>
+
+      <a
+        href="https://cal.com/automate305/30min"
+        target="_blank"
+        rel="noopener"
+        class="btn-primary nav-cta"
+        style="padding: 10px 20px; font-size: 14px;"
+      >
+        Book a Free Audit
+      </a>
+
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-      <div class="nav-links">
-        <a href="services.html">Services</a>
-        <a href="proof.html">Proof</a>
-        <a href="contact.html" class="active">Contact</a>
-        <a href="https://cal.com/automate305/30min" target="_blank" class="nav-cta">Book a Free Audit</a>
-      </div>
     </div>
   </nav>
 
-  <div class="page-top"></div>
-
-  <!-- HERO -->
-  <section style="background: var(--bg-dark); padding: 96px 0 72px; text-align: center;">
+  <!-- =============================================
+       Page Hero
+       ============================================= -->
+  <section
+    style="background: var(--color-bg-primary); padding: var(--space-3xl) 0 var(--space-2xl); text-align: center;"
+    aria-labelledby="contact-hero-heading"
+  >
     <div class="container">
-      <span class="section-eyebrow">Get in Touch</span>
-      <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4rem);">Book a Free Strategy Call<br>with Camilo</h1>
-      <p class="section-subtitle" style="margin: 0 auto; font-size: 1.1rem;">
-        30 minutes. No pitch. Just a clear map of where your revenue is leaking — and how to fix it.
+      <span class="section-label">Let's Talk</span>
+      <h1 id="contact-hero-heading" style="color: var(--color-text-light); margin-bottom: var(--space-sm);">
+        Book a Free Strategy Call with Camilo
+      </h1>
+      <p class="section-subtitle">
+        30 minutes. No pitch. Just a workflow audit.
       </p>
-      <div style="margin-top: 32px;">
-        <a href="https://cal.com/automate305/30min" target="_blank" class="btn btn-primary btn-lg">
+
+      <div style="margin-top: var(--space-xl);">
+        <a
+          href="https://cal.com/automate305/30min"
+          target="_blank"
+          rel="noopener"
+          class="btn-primary contact-cal-btn"
+          style="font-size: 20px; padding: 18px 40px;"
+        >
           📅 Book a Free 30-Min Audit
         </a>
+        <p class="text-sm muted" style="margin-top: var(--space-sm);">
+          Instant booking &mdash; pick a time that works for you
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT LAYOUT -->
-  <section class="bg-dark">
+  <!-- =============================================
+       Contact Section — Form + Info
+       ============================================= -->
+  <section class="contact-section" aria-labelledby="contact-form-heading">
     <div class="container">
-      <div class="contact-layout">
+      <div class="contact-grid">
 
-        <!-- CONTACT FORM -->
-        <div>
-          <div class="section-header">
-            <span class="section-eyebrow">Send a Message</span>
-            <h2 class="section-title" style="font-size: 1.8rem;">Or fill out the form</h2>
-            <p class="section-subtitle" style="font-size: 0.9rem;">Camilo personally responds to every inquiry within 24 hours.</p>
+        <!-- Left: Contact Info + About Camilo -->
+        <div class="contact-info">
+          <span class="section-label">Or Send a Message</span>
+          <h2 class="section-title" id="contact-form-heading" style="font-size: 32px; margin-bottom: var(--space-sm);">
+            Prefer to Reach Out Directly?
+          </h2>
+          <p>
+            Fill out the form and Camilo will get back to you within one business day.
+            If you're ready to move fast, the calendar link above is the quickest way to get started.
+          </p>
+
+          <!-- Service Area -->
+          <div
+            style="margin-top: var(--space-lg); background: var(--color-card-dark); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-md);"
+          >
+            <h3 style="font-size: 18px; color: var(--color-text-light); margin-bottom: var(--space-xs);">
+              📍 Service Area
+            </h3>
+            <p style="font-size: 15px; color: var(--color-muted-dark); line-height: 1.7;">
+              We serve Miami-Dade, Broward, and Palm Beach counties.
+              Remote automation setup available nationwide.
+            </p>
           </div>
 
-          <!-- Form action: replace with your backend endpoint or Formspree/Netlify Forms URL -->
-          <form class="contact-form" action="#" method="POST" id="contact-form">
-            <div class="form-group">
-              <label for="name">Your Name *</label>
-              <input type="text" id="name" name="name" placeholder="John Smith" required />
+          <!-- About Camilo -->
+          <div class="about-camilo" style="margin-top: var(--space-lg);">
+            <img
+              src="assets/camilo-scooter.png"
+              alt="Camilo, founder of Automate305"
+            />
+            <div class="about-camilo-text">
+              <h4>Camilo — Founder, Automate305</h4>
+              <p>
+                Camilo is the founder of Automate305 and a Miami-based AI automation specialist.
+                He's personally built automation systems for local HVAC companies that recover thousands in monthly revenue.
+                When he's not building automations, he's on his scooter exploring Miami.
+              </p>
+              <div class="social-links">
+                <a href="#" aria-label="Follow Automate305 on Instagram">Instagram</a>
+                <a href="#" aria-label="Connect with Camilo on LinkedIn">LinkedIn</a>
+              </div>
             </div>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div>
+          <form
+            class="contact-form"
+            action="#"
+            method="post"
+            aria-label="Contact form"
+            novalidate
+          >
+            <h3 style="font-size: 20px; color: var(--color-text-light); margin-bottom: var(--space-md);">
+              Send Camilo a Message
+            </h3>
 
             <div class="form-group">
-              <label for="business">Business Name *</label>
-              <input type="text" id="business" name="business" placeholder="Smith HVAC Services" required />
+              <label for="contact-name">Your Name <span style="color: var(--color-urgency);">*</span></label>
+              <input
+                type="text"
+                id="contact-name"
+                name="name"
+                placeholder="First and last name"
+                required
+                autocomplete="name"
+              />
             </div>
 
             <div class="form-group">
-              <label for="email">Email Address *</label>
-              <input type="email" id="email" name="email" placeholder="john@smithhvac.com" required />
+              <label for="contact-business">Business Name <span style="color: var(--color-urgency);">*</span></label>
+              <input
+                type="text"
+                id="contact-business"
+                name="business"
+                placeholder="Your company name"
+                required
+                autocomplete="organization"
+              />
             </div>
 
             <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="(305) 555-0100" />
+              <label for="contact-email">Email Address <span style="color: var(--color-urgency);">*</span></label>
+              <input
+                type="email"
+                id="contact-email"
+                name="email"
+                placeholder="you@yourbusiness.com"
+                required
+                autocomplete="email"
+              />
             </div>
 
             <div class="form-group">
-              <label for="message">What's your biggest challenge right now? (optional)</label>
-              <textarea id="message" name="message" placeholder="e.g. Missing too many after-hours calls, slow on follow-up, can't keep up with estimates..."></textarea>
+              <label for="contact-phone">Phone Number</label>
+              <input
+                type="tel"
+                id="contact-phone"
+                name="phone"
+                placeholder="(305) 000-0000"
+                autocomplete="tel"
+              />
             </div>
 
-            <div class="form-submit">
-              <button type="submit" class="btn btn-primary" style="width: 100%;">
-                Send Message
-              </button>
+            <div class="form-group">
+              <label for="contact-message">Message <span style="color: var(--color-muted-dark); font-weight: 400;">(optional)</span></label>
+              <textarea
+                id="contact-message"
+                name="message"
+                placeholder="Tell us a bit about your business and what you're looking to automate..."
+                rows="5"
+              ></textarea>
             </div>
 
-            <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 12px; text-align: center;">
-              Or skip the form — <a href="https://cal.com/automate305/30min" target="_blank">book directly on Cal.com</a>
+            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; font-size: 16px; padding: 14px;">
+              Send Message &rarr;
+            </button>
+
+            <p class="text-sm muted" style="text-align: center; margin-top: var(--space-sm);">
+              We typically respond within 1 business day.
+              For fastest response, <a href="https://cal.com/automate305/30min" target="_blank" rel="noopener" style="color: var(--color-accent);">book directly on Cal.com</a>.
             </p>
           </form>
         </div>
 
-        <!-- CONTACT INFO -->
-        <div>
-          <div class="section-header">
-            <span class="section-eyebrow">Details</span>
-            <h2 class="section-title" style="font-size: 1.8rem;">Let's Talk</h2>
-          </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="contact-detail">
-            <span class="icon">📅</span>
-            <div>
-              <strong>Book a Free Audit</strong><br>
-              <a href="https://cal.com/automate305/30min" target="_blank">cal.com/automate305/30min</a>
-            </div>
-          </div>
-
-          <div class="contact-detail">
-            <span class="icon">📍</span>
-            <div>
-              <strong>Service Area</strong><br>
-              <span style="color: var(--text-muted);">Miami-Dade, Broward, Palm Beach counties</span>
-            </div>
-          </div>
-
-          <div class="contact-detail">
-            <span class="icon">🕐</span>
-            <div>
-              <strong>Response Time</strong><br>
-              <span style="color: var(--text-muted);">Within 24 hours — Navi answers 24/7</span>
-            </div>
-          </div>
-
-          <div class="contact-detail">
-            <span class="icon">💬</span>
-            <div>
-              <strong>Languages</strong><br>
-              <span style="color: var(--text-muted);">English &amp; Spanish (Hablamos español)</span>
-            </div>
-          </div>
-
-          <!-- Cal.com booking block -->
-          <div style="margin-top: 36px; background: var(--bg-dark-card); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 28px; text-align: center;">
-            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px;">
-              The fastest way to get started — pick a time that works for you:
-            </p>
-            <a href="https://cal.com/automate305/30min" target="_blank" class="btn btn-primary" style="width: 100%; display: block; text-align: center;">
-              📅 View Camilo's Calendar
-            </a>
-            <p style="font-size: 0.75rem; color: #555; margin-top: 12px;">Free · 30 minutes · No obligation</p>
-          </div>
-        </div>
-
+  <!-- =============================================
+       FAQ / Reassurance Block
+       ============================================= -->
+  <section
+    style="background: var(--color-card-dark); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); padding: var(--space-3xl) 0;"
+    aria-labelledby="faq-heading"
+  >
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What to Expect</span>
+        <h2 class="section-title" id="faq-heading">What Happens on the Audit Call?</h2>
+        <p class="section-subtitle">No sales pressure. No pitch deck. Just a real conversation about your business.</p>
       </div>
 
-      <!-- ABOUT CAMILO -->
-      <div class="about-camilo">
-        <div class="about-inner">
-          <div class="about-photo-wrap">
-            <!-- Replace src with actual photo path when available -->
-            <!-- <img src="assets/camilo-scooter.png" alt="Camilo, founder of Automate305 on his scooter" /> -->
-            <div class="about-photo-placeholder">🛵</div>
-          </div>
-          <div class="about-text">
-            <h3>About Camilo</h3>
-            <p>
-              Licensed mold assessor. Field experience in restoration. Worked for two major environmental labs in Miami.
-              Now building AI automation systems for Miami SMBs — starting with HVAC because that's where the revenue leaks are biggest and most fixable.
-            </p>
-            <p style="margin-top: 12px;">
-              Every audit is done personally. Every system is built to fit your workflow, not the other way around.
-            </p>
-            <div style="margin-top: 16px; display: flex; gap: 12px; flex-wrap: wrap;">
-              <!-- Replace # with actual social URLs when ready -->
-              <a href="#" target="_blank" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.8rem;">LinkedIn</a>
-              <a href="#" target="_blank" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.8rem;">Twitter / X</a>
-            </div>
-          </div>
+      <div class="process-grid" style="margin-top: var(--space-2xl);">
+        <div class="process-card">
+          <span class="process-number" style="font-size: 36px;">1.</span>
+          <h3>You tell Camilo how your business runs</h3>
+          <p>Walk him through your current workflow — how leads come in, how you follow up, how you schedule jobs.</p>
+        </div>
+
+        <div class="process-card">
+          <span class="process-number" style="font-size: 36px;">2.</span>
+          <h3>He identifies where revenue is leaking</h3>
+          <p>Using your numbers, Camilo maps out the exact points where you're losing money to missed calls, slow follow-up, or manual processes.</p>
+        </div>
+
+        <div class="process-card">
+          <span class="process-number" style="font-size: 36px;">3.</span>
+          <h3>You see a custom automation plan</h3>
+          <p>Camilo shows you what an automation system would look like for your specific business — what it would do, what it would cost, what you'd recover.</p>
+        </div>
+
+        <div class="process-card">
+          <span class="process-number" style="font-size: 36px;">4.</span>
+          <h3>You decide if you want to move forward</h3>
+          <p>No pressure. The audit is valuable on its own. If the numbers make sense and you want to build, great. If not, you still leave with useful insights.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="cta-section">
-    <div class="container">
-      <h2>Ready to Recover Lost Revenue?</h2>
-      <p>The audit is free. The results are real. Book 30 minutes with Camilo today.</p>
-      <a href="https://cal.com/automate305/30min" target="_blank" class="btn btn-white btn-lg">Book Your Free Audit</a>
-    </div>
-  </section>
+  <!-- =============================================
+       Final CTA
+       ============================================= -->
+  <div class="cta-block">
+    <h2>Still Have Questions?</h2>
+    <p>Chat with Navi using the button below, or book a call directly with Camilo.</p>
+    <a
+      href="https://cal.com/automate305/30min"
+      target="_blank"
+      rel="noopener"
+      class="btn-primary"
+      style="font-size: 18px; padding: 16px 36px;"
+    >
+      📅 Book a Free Audit
+    </a>
+  </div>
 
-  <!-- FOOTER -->
-  <footer class="footer">
+  <!-- =============================================
+       Footer
+       ============================================= -->
+  <footer class="footer" aria-label="Site footer">
     <div class="container">
-      <div class="footer-inner">
+      <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="logo">
-            <span style="color:#6D28D9">⚡</span>AUTOMATE<span style="color:#6D28D9">305</span>
+            AUTOMATE<span class="purple">305</span> ⚡
           </a>
-          <p>AI automation for Miami HVAC pros and SMBs. Recover $3k–6k/month in lost revenue.</p>
+          <p>AI automation for Miami SMBs. We help HVAC companies — and other local service businesses — recover thousands in monthly revenue through smart automation.</p>
+          <p style="margin-top: var(--space-sm);">&copy; 2025 Automate305. Miami, FL. All rights reserved.</p>
         </div>
-        <div class="footer-links">
-          <h4>Pages</h4>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
           <ul>
             <li><a href="services.html">Services</a></li>
             <li><a href="proof.html">Proof</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="https://cal.com/automate305/30min" target="_blank">Book Audit</a></li>
+            <li><a href="https://cal.com/automate305/30min" target="_blank" rel="noopener">Book a Free Audit</a></li>
           </ul>
         </div>
-        <div class="footer-links">
-          <h4>Service Area</h4>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
           <ul>
-            <li><a href="#">Miami-Dade</a></li>
-            <li><a href="#">Broward</a></li>
-            <li><a href="#">Palm Beach</a></li>
+            <li><a href="mailto:hello@automate305.com">hello@automate305.com</a></li>
+            <li><span style="color: var(--color-muted-dark);">Miami, FL</span></li>
+            <li><a href="https://cal.com/automate305/30min" target="_blank" rel="noopener">📅 cal.com/automate305/30min</a></li>
           </ul>
         </div>
       </div>
+
       <div class="footer-bottom">
-        <p>© 2026 <span class="accent">Automate305</span> — Miami AI Automation for SMBs</p>
-        <p style="font-size:0.75rem; color:#444;">Built in Miami 🌴</p>
+        <p>Built in Miami by Camilo &mdash; Automate305 &bull; AI automation that actually works for real businesses.</p>
       </div>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
   <script src="js/navi.js"></script>
-
-  <script>
-    // Simple form feedback
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const btn = this.querySelector('[type="submit"]');
-      btn.textContent = '✓ Message sent! Camilo will reply within 24 hours.';
-      btn.style.background = '#10B981';
-      btn.disabled = true;
-    });
-  </script>
 </body>
 </html>

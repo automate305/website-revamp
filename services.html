@@ -3,218 +3,329 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services — Automate305</title>
-  <meta name="description" content="How Automate305 works: AI voice receptionist, lead follow-up automation, dispatch and scheduling for Miami HVAC companies." />
+  <title>Services | Automate305 — AI Automation for Miami HVAC</title>
+  <meta name="description" content="See how Automate305 builds AI automation systems for Miami HVAC companies in 4 steps — from audit to recovered revenue in 2 weeks." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="nav">
+  <!-- =============================================
+       Navigation
+       ============================================= -->
+  <nav class="nav" id="main-nav" aria-label="Main navigation">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <span class="bolt">⚡</span>AUTOMATE<span class="purple">305</span>
+      <a href="index.html" class="logo" aria-label="Automate305 home">
+        AUTOMATE<span class="purple">305</span> ⚡
       </a>
-      <button class="nav-hamburger" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="proof.html">Proof</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a
+            href="https://cal.com/automate305/30min"
+            target="_blank"
+            rel="noopener"
+            class="btn-primary"
+            style="padding: 10px 18px; font-size: 14px;"
+          >
+            Book a Free Audit
+          </a>
+        </li>
+      </ul>
+
+      <a
+        href="https://cal.com/automate305/30min"
+        target="_blank"
+        rel="noopener"
+        class="btn-primary nav-cta"
+        style="padding: 10px 20px; font-size: 14px;"
+      >
+        Book a Free Audit
+      </a>
+
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-      <div class="nav-links">
-        <a href="services.html" class="active">Services</a>
-        <a href="proof.html">Proof</a>
-        <a href="contact.html">Contact</a>
-        <a href="https://cal.com/automate305/30min" target="_blank" class="nav-cta">Book a Free Audit</a>
-      </div>
     </div>
   </nav>
 
-  <div class="page-top"></div>
-
-  <!-- HERO -->
-  <section style="background: var(--bg-dark); padding: 96px 0 72px; text-align: center;">
+  <!-- =============================================
+       Page Hero
+       ============================================= -->
+  <section
+    style="background: var(--color-bg-primary); padding: var(--space-3xl) 0 var(--space-2xl); text-align: center;"
+    aria-labelledby="services-hero-heading"
+  >
     <div class="container">
-      <span class="section-eyebrow">How It Works</span>
-      <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4rem);">How Automate305 Works</h1>
-      <p class="section-subtitle" style="margin: 0 auto; font-size: 1.1rem;">
-        Four steps from your current workflow to recovering $3k–6k/month — without replacing anything you already use.
+      <span class="section-label">How It Works</span>
+      <h1 id="services-hero-heading" style="color: var(--color-text-light); margin-bottom: var(--space-sm);">
+        How Automate305 Works
+      </h1>
+      <p class="section-subtitle">
+        Four steps from audit to recovered revenue
       </p>
     </div>
   </section>
 
-  <!-- 4-STEP PROCESS -->
-  <section class="bg-dark">
+  <!-- =============================================
+       4-Step Process
+       ============================================= -->
+  <section class="section" style="padding-top: 0;" aria-labelledby="process-heading">
     <div class="container">
-      <div class="steps-grid">
-        <div class="step-card">
-          <div class="step-number">01</div>
+      <div class="process-grid">
+        <!-- Step 01 -->
+        <div class="process-card">
+          <span class="process-number">01</span>
           <h3>Audit</h3>
-          <p>We map your current workflow — spreadsheets, missed calls, slow follow-up. You'll see exactly where revenue is leaking before we touch a single tool.</p>
+          <p>
+            We map your current workflow end-to-end and find exactly where revenue is leaking — missed calls, slow follow-up, manual scheduling gaps.
+            You'll see your own numbers clearly for the first time.
+          </p>
         </div>
-        <div class="step-card">
-          <div class="step-number">02</div>
+
+        <!-- Step 02 -->
+        <div class="process-card">
+          <span class="process-number">02</span>
           <h3>Build</h3>
-          <p>Camilo builds AI systems tailored to your HVAC business — no off-the-shelf templates. Every automation fits how your team actually works.</p>
+          <p>
+            We build your custom AI automation stack in 2 weeks.
+            No off-the-shelf software. Everything is built around how your business actually operates — your tools, your workflow, your customers.
+          </p>
         </div>
-        <div class="step-card">
-          <div class="step-number">03</div>
+
+        <!-- Step 03 -->
+        <div class="process-card">
+          <span class="process-number">03</span>
           <h3>Deploy</h3>
-          <p>Navi (AI chat), voice receptionist, and follow-up automations go live. Your team gets trained. You're operational within days, not months.</p>
+          <p>
+            We go live and handle all testing and edge cases.
+            Navi handles calls, leads get followed up automatically, and your schedule fills itself.
+            You don't touch a thing.
+          </p>
         </div>
-        <div class="step-card">
-          <div class="step-number">04</div>
+
+        <!-- Step 04 -->
+        <div class="process-card">
+          <span class="process-number">04</span>
           <h3>Recover</h3>
-          <p>$3k–6k/month average revenue recovery from calls answered, leads followed up, and jobs booked — money that was already yours, just slipping away.</p>
+          <p>
+            You start recovering $3k-6k/month in missed revenue within the first 30 days.
+            We track everything and report back monthly so you can see exactly what the automation is doing for your bottom line.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- VIDEO PLACEHOLDER -->
-  <section style="background: var(--bg-dark); padding: 0 0 80px;">
-    <div class="container">
-      <!-- REPLACE with actual MP4 or YouTube embed when ready -->
-      <!-- YouTube: <iframe width="100%" height="480" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe> -->
-      <!-- MP4: <video controls width="100%"><source src="assets/demo.mp4" type="video/mp4"></video> -->
-      <div class="video-placeholder">
-        <div class="video-play-icon">▶</div>
-        <strong>Automate305 — 3-Minute Demo</strong>
-        <p>See how we recover $3k–6k/month for a real Miami HVAC company</p>
-        <p style="margin-top: 8px; font-size: 0.8rem; color: #555;">Demo video coming soon</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- TOOL PICKER + ROI WIDGET -->
-  <div id="tool-picker"></div>
-
-  <!-- FULL SERVICES LIST -->
-  <section class="bg-dark">
+  <!-- =============================================
+       Tool Picker Section
+       ============================================= -->
+  <section class="tool-picker-section" aria-labelledby="tool-picker-heading">
     <div class="container">
       <div class="section-header">
-        <span class="section-eyebrow">Full Service List</span>
-        <h2 class="section-title">Everything We Build</h2>
-        <p class="section-subtitle">Each system is custom-built for your business — not a plug-and-play SaaS tool.</p>
+        <span class="section-label">Personalize Your Estimate</span>
+        <h2 class="section-title" id="tool-picker-heading">See How It Works With Your Current Tools</h2>
+        <p class="section-subtitle">
+          Select what you use today — we'll show you exactly how we'd automate your workflow and what you'd recover.
+        </p>
       </div>
-      <div class="services-full">
-        <div class="service-full-card">
-          <div class="service-full-icon">📞</div>
-          <div class="service-full-content">
-            <h3>AI Voice Receptionist</h3>
-            <p>An AI that answers every inbound call 24/7 — qualifying the caller, booking appointments, and routing emergencies. Your customers think they're talking to your front desk. You're at dinner.</p>
-            <div class="feature-list">
-              <span class="feature-tag">24/7 call answering</span>
-              <span class="feature-tag">Appointment booking</span>
-              <span class="feature-tag">Emergency routing</span>
-              <span class="feature-tag">Bilingual (EN/ES)</span>
-              <span class="feature-tag">Call transcripts</span>
-            </div>
-          </div>
-        </div>
 
-        <div class="service-full-card">
-          <div class="service-full-icon">⚡</div>
-          <div class="service-full-content">
-            <h3>Lead Follow-Up Automation</h3>
-            <p>Every estimate, every form submission, every inquiry — followed up within 2 minutes via email and SMS. Sequences that run for 14 days until the lead responds or books. No lead goes cold.</p>
-            <div class="feature-list">
-              <span class="feature-tag">2-minute follow-up</span>
-              <span class="feature-tag">Email + SMS sequences</span>
-              <span class="feature-tag">Estimate nurturing</span>
-              <span class="feature-tag">14-day cadence</span>
-              <span class="feature-tag">HubSpot / CRM sync</span>
-            </div>
-          </div>
-        </div>
+      <div id="tool-picker"></div>
+    </div>
+  </section>
 
-        <div class="service-full-card">
-          <div class="service-full-icon">🗓️</div>
-          <div class="service-full-content">
-            <h3>Dispatch &amp; Scheduling Optimization</h3>
-            <p>Emergency calls routed to the right technician by zone and availability. Calendar optimization that reduces windshield time and fits more jobs per day. Fully automated, fully customizable.</p>
-            <div class="feature-list">
-              <span class="feature-tag">Emergency routing</span>
-              <span class="feature-tag">Zone optimization</span>
-              <span class="feature-tag">Calendar management</span>
-              <span class="feature-tag">Technician alerts</span>
-              <span class="feature-tag">Housecall Pro / ServiceTitan</span>
-            </div>
-          </div>
-        </div>
+  <!-- =============================================
+       Full Service Details
+       ============================================= -->
+  <section class="section" aria-labelledby="service-details-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What We Build</span>
+        <h2 class="section-title" id="service-details-heading">Our Three Core Automation Products</h2>
+        <p class="section-subtitle">
+          Each product targets a different revenue leak — together they form a complete automated revenue recovery system.
+        </p>
+      </div>
 
-        <div class="service-full-card">
-          <div class="service-full-icon">📊</div>
-          <div class="service-full-content">
-            <h3>Revenue Recovery Dashboard</h3>
-            <p>A live dashboard showing every call answered, every lead followed up, every job booked — and the dollar value recovered. Know your ROI in real time, not at the end of the quarter.</p>
-            <div class="feature-list">
-              <span class="feature-tag">Live revenue tracking</span>
-              <span class="feature-tag">Lead pipeline view</span>
-              <span class="feature-tag">Weekly email reports</span>
-              <span class="feature-tag">Google Sheets export</span>
-            </div>
-          </div>
+      <!-- Service 1: AI Voice Receptionist -->
+      <div class="service-detail-card" style="margin-top: var(--space-2xl);">
+        <div class="service-detail-icon">🎙️</div>
+        <div class="service-detail-body">
+          <h3>AI Voice Receptionist</h3>
+          <p>
+            Handles after-hours calls, qualifies leads, and books appointments — 24/7, no hold music, no missed calls.
+            Navi answers in seconds, asks the right questions, and either books the job or routes the lead to the right technician.
+            Most HVAC companies lose 30-40% of their calls after 6pm. We capture every one.
+          </p>
+          <ul style="margin-top: var(--space-sm); padding-left: 20px; list-style: disc; color: var(--color-muted-dark); font-size: 15px; display: flex; flex-direction: column; gap: 6px;">
+            <li>Answers calls in under 3 seconds, any time of day</li>
+            <li>Qualifies leads with custom questions for your service area</li>
+            <li>Books directly into your scheduling system</li>
+            <li>Escalates emergencies to on-call techs instantly</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Service 2: Lead Follow-Up Automation -->
+      <div class="service-detail-card">
+        <div class="service-detail-icon">📬</div>
+        <div class="service-detail-body">
+          <h3>Lead Follow-Up Automation</h3>
+          <p>
+            Every new lead gets a follow-up within 2 minutes — not 2 days.
+            Whether they came in through your website, a missed call, or a referral, the system reaches out instantly
+            with a personalized SMS and email sequence that feels human but runs itself.
+            Studies show the first company to respond wins the job 70% of the time.
+          </p>
+          <ul style="margin-top: var(--space-sm); padding-left: 20px; list-style: disc; color: var(--color-muted-dark); font-size: 15px; display: flex; flex-direction: column; gap: 6px;">
+            <li>2-minute response time on every new lead, 24/7</li>
+            <li>Multi-touch sequences: SMS, email, and follow-up calls</li>
+            <li>Automatically tracks lead stage and next action</li>
+            <li>Notifies you only when a lead is ready to book</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Service 3: Dispatch & Scheduling -->
+      <div class="service-detail-card">
+        <div class="service-detail-icon">🗓️</div>
+        <div class="service-detail-body">
+          <h3>Dispatch &amp; Scheduling Optimization</h3>
+          <p>
+            AI-optimized scheduling reduces drive time and increases daily jobs completed.
+            Your techs get routed smarter — fewer miles, more jobs, less overtime.
+            The system considers zones, job duration, tech skill level, and traffic patterns to fill your calendar efficiently.
+          </p>
+          <ul style="margin-top: var(--space-sm); padding-left: 20px; list-style: disc; color: var(--color-muted-dark); font-size: 15px; display: flex; flex-direction: column; gap: 6px;">
+            <li>Zone-based routing that cuts drive time by up to 30%</li>
+            <li>Technician skill matching for faster job completion</li>
+            <li>Automatic customer confirmation and reminder messages</li>
+            <li>Real-time reschedule handling without manual intervention</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- INDUSTRIES COMING SOON -->
-  <section style="padding: 48px 0 80px; background: var(--bg-dark);">
-    <div class="container">
-      <div class="industries-section">
-        <p class="industries-label">Also serving soon</p>
-        <p class="industries-list">Roofing &bull; Plumbing &bull; Electrical &bull; Restoration &bull; Professional Services &bull; Hospitality</p>
-        <p class="industries-note">Don't see yours? <a href="#" onclick="document.getElementById('navi-bubble').click();return false;">Ask Navi</a> or <a href="https://cal.com/automate305/30min" target="_blank">book a call with Camilo</a>.</p>
+  <!-- =============================================
+       Video Placeholder
+       ============================================= -->
+  <section class="section" style="padding-top: 0;" aria-label="Demo video section">
+    <div class="container text-center">
+      <span class="section-label">See It In Action</span>
+      <h2 class="section-title">Watch a Live Demo</h2>
+      <p class="section-subtitle">
+        See Navi handle a real after-hours HVAC call from lead to booked appointment — in under 90 seconds.
+      </p>
+
+      <div class="video-placeholder" role="img" aria-label="Demo video placeholder — coming soon">
+        <div class="video-placeholder-icon">▶️</div>
+        <p>Demo video coming soon</p>
+        <p class="text-sm muted">We're recording our first live client demos — check back soon.</p>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="cta-section">
+  <!-- =============================================
+       More Industries Note
+       ============================================= -->
+  <section
+    style="background: var(--color-card-dark); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); padding: var(--space-xl) 0; text-align: center;"
+    aria-label="Upcoming industries"
+  >
     <div class="container">
-      <h2>See What We'd Build for You</h2>
-      <p>Free 30-minute workflow audit. No pitch. Just a clear picture of what you're losing and how to get it back.</p>
-      <a href="https://cal.com/automate305/30min" target="_blank" class="btn btn-white btn-lg">Book Your Free Audit</a>
+      <span class="section-label">Coming Soon</span>
+      <h2 class="section-title" style="margin-bottom: var(--space-sm);">More Industries on the Way</h2>
+      <p class="section-subtitle">
+        We're starting with HVAC and expanding to all Miami service businesses in 2025.
+      </p>
+      <div class="industries-list" role="list" style="margin-top: var(--space-md);">
+        <span class="industry-tag" role="listitem">🍽️ Restaurant chains</span>
+        <span class="industry-tag" role="listitem">⚖️ Law firms</span>
+        <span class="industry-tag" role="listitem">🏠 Real estate agencies</span>
+        <span class="industry-tag" role="listitem">🏥 Medical / dental offices</span>
+        <span class="industry-tag" role="listitem">🔧 Auto repair shops</span>
+      </div>
+      <p class="note">
+        Running a different kind of business?
+        <a href="contact.html" style="color: var(--color-accent);">Tell us about it.</a>
+      </p>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
+  <!-- =============================================
+       CTA
+       ============================================= -->
+  <div class="cta-block">
+    <span class="urgency-note">Free audit — no commitment required</span>
+    <h2 style="margin-top: var(--space-md);">Ready to See What You're Missing?</h2>
+    <p>Camilo will audit your current workflow and show you exactly where the revenue leaks are.</p>
+    <a
+      href="https://cal.com/automate305/30min"
+      target="_blank"
+      rel="noopener"
+      class="btn-primary"
+      style="font-size: 18px; padding: 16px 36px;"
+    >
+      📅 Book a Free Audit
+    </a>
+  </div>
+
+  <!-- =============================================
+       Footer
+       ============================================= -->
+  <footer class="footer" aria-label="Site footer">
     <div class="container">
-      <div class="footer-inner">
+      <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="logo">
-            <span style="color:#6D28D9">⚡</span>AUTOMATE<span style="color:#6D28D9">305</span>
+            AUTOMATE<span class="purple">305</span> ⚡
           </a>
-          <p>AI automation for Miami HVAC pros and SMBs. Recover $3k–6k/month in lost revenue.</p>
+          <p>AI automation for Miami SMBs. We help HVAC companies — and other local service businesses — recover thousands in monthly revenue through smart automation.</p>
+          <p style="margin-top: var(--space-sm);">&copy; 2025 Automate305. Miami, FL. All rights reserved.</p>
         </div>
-        <div class="footer-links">
-          <h4>Pages</h4>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
           <ul>
             <li><a href="services.html">Services</a></li>
             <li><a href="proof.html">Proof</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="https://cal.com/automate305/30min" target="_blank">Book Audit</a></li>
+            <li><a href="https://cal.com/automate305/30min" target="_blank" rel="noopener">Book a Free Audit</a></li>
           </ul>
         </div>
-        <div class="footer-links">
-          <h4>Service Area</h4>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
           <ul>
-            <li><a href="#">Miami-Dade</a></li>
-            <li><a href="#">Broward</a></li>
-            <li><a href="#">Palm Beach</a></li>
+            <li><a href="mailto:hello@automate305.com">hello@automate305.com</a></li>
+            <li><span style="color: var(--color-muted-dark);">Miami, FL</span></li>
+            <li><a href="https://cal.com/automate305/30min" target="_blank" rel="noopener">📅 cal.com/automate305/30min</a></li>
           </ul>
         </div>
       </div>
+
       <div class="footer-bottom">
-        <p>© 2026 <span class="accent">Automate305</span> — Miami AI Automation for SMBs</p>
-        <p style="font-size:0.75rem; color:#444;">Built in Miami 🌴</p>
+        <p>Built in Miami by Camilo &mdash; Automate305 &bull; AI automation that actually works for real businesses.</p>
       </div>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
-  <script src="js/tool-picker.js"></script>
   <script src="js/navi.js"></script>
+  <script src="js/tool-picker.js"></script>
 </body>
 </html>

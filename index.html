@@ -3,191 +3,317 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Automate305 — AI Automation for Miami HVAC &amp; SMBs</title>
-  <meta name="description" content="AI-powered revenue recovery for Miami HVAC companies. Recover $3k–6k/month in missed calls, slow follow-up, and lost leads. Book a free audit." />
+  <title>Automate305 | AI Automation for Miami HVAC</title>
+  <meta name="description" content="Automate305 helps Miami HVAC companies recover $3k-6k/month in missed revenue through AI-powered lead follow-up, scheduling, and dispatch automation." />
+  <meta name="keywords" content="HVAC automation Miami, AI automation Miami, lead follow-up automation, HVAC software, Automate305" />
+  <meta property="og:title" content="Automate305 | AI Automation for Miami HVAC" />
+  <meta property="og:description" content="Stop losing revenue to missed calls and slow follow-up. Automate305 builds AI automation systems for Miami HVAC companies." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="nav">
+  <!-- =============================================
+       Navigation
+       ============================================= -->
+  <nav class="nav" id="main-nav" aria-label="Main navigation">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <span class="bolt">⚡</span>AUTOMATE<span class="purple">305</span>
+      <a href="index.html" class="logo" aria-label="Automate305 home">
+        AUTOMATE<span class="purple">305</span> ⚡
       </a>
-      <button class="nav-hamburger" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="proof.html">Proof</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a
+            href="https://cal.com/automate305/30min"
+            target="_blank"
+            rel="noopener"
+            class="btn-primary"
+            style="padding: 10px 18px; font-size: 14px;"
+          >
+            Book a Free Audit
+          </a>
+        </li>
+      </ul>
+
+      <a
+        href="https://cal.com/automate305/30min"
+        target="_blank"
+        rel="noopener"
+        class="btn-primary nav-cta"
+        style="padding: 10px 20px; font-size: 14px;"
+      >
+        Book a Free Audit
+      </a>
+
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-      <div class="nav-links">
-        <a href="services.html">Services</a>
-        <a href="proof.html">Proof</a>
-        <a href="contact.html">Contact</a>
-        <a href="https://cal.com/automate305/30min" target="_blank" class="nav-cta">Book a Free Audit</a>
-      </div>
     </div>
   </nav>
 
-  <div class="page-top"></div>
+  <!-- =============================================
+       Hero Section
+       ============================================= -->
+  <section class="hero" id="hero" aria-label="Hero">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <canvas id="particle-canvas"></canvas>
     <div class="hero-content">
-      <span class="hero-eyebrow">Miami AI Automation Agency</span>
-      <h1>More Leads. Faster Follow-Up.<br>More Booked Jobs.</h1>
-      <div class="rotating-text-wrapper">
-        <span class="rotating-text" id="rotating-text">More Revenue</span>
-      </div>
+      <div class="hero-eyebrow">Miami AI Automation Agency</div>
+
+      <h1>More Leads. Faster Follow&#8209;Up. More Booked Jobs.</h1>
+
+      <p class="hero-subheadline">
+        <span id="rotating-text">More Revenue</span> for Your HVAC Business
+      </p>
+
       <p class="hero-description">
         The AI-powered revenue system for HVAC companies — and coming soon to other Miami SMBs.
       </p>
-      <div class="hero-ctas">
-        <a href="https://cal.com/automate305/30min" target="_blank" class="btn btn-primary btn-lg">
+
+      <div class="hero-actions">
+        <a
+          href="https://cal.com/automate305/30min"
+          target="_blank"
+          rel="noopener"
+          class="btn-primary"
+        >
           Book a Free Audit
         </a>
-        <a href="services.html" class="btn btn-secondary btn-lg">
+        <a href="services.html" class="btn-outline">
           See How It Works
         </a>
       </div>
     </div>
   </section>
 
-  <!-- STATS BAR -->
-  <section style="padding: 48px 0; border-top: 1px solid #2A2A35; border-bottom: 1px solid #2A2A35;">
-    <div class="container">
-      <div class="stats-bar" style="border: none; margin: 0; padding: 0;">
-        <div class="stat-item">
-          <span class="stat-value">$3k–6k</span>
-          <span class="stat-label">Avg. monthly recovery</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-value">24/7</span>
-          <span class="stat-label">AI call answering</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-value">2 min</span>
-          <span class="stat-label">Avg. follow-up speed</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-value">89%</span>
-          <span class="stat-label">After-hours calls booked</span>
+  <!-- =============================================
+       Logo Marquee
+       ============================================= -->
+  <section class="marquee-section" aria-label="Tools and platforms we use">
+    <p class="marquee-label">Built on tools HVAC owners already use — and the best AI platforms</p>
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <div class="marquee-content" id="marquee-content" aria-hidden="true">
+          <span>📊 Google Sheets</span>
+          <span>📁 Google Drive</span>
+          <span>🎯 Apollo.io</span>
+          <span>📧 SmartLead</span>
+          <span>🟠 HubSpot</span>
+          <span>🤖 OpenAI</span>
+          <span>🔮 Claude/Anthropic</span>
+          <span>⚙️ Make.com</span>
+          <span>📅 Cal.com</span>
+          <span>▲ Vercel</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- LOGO MARQUEE -->
-  <section class="marquee-section">
-    <div class="marquee-label">Built on tools HVAC owners already use — and the best AI platforms</div>
-    <div class="marquee-track" aria-label="Partner tools">
-      <div class="marquee-inner">
-        <!-- First set -->
-        <div class="marquee-item"><span class="logo-icon">📊</span><span class="logo-name">Google Sheets</span></div>
-        <div class="marquee-item"><span class="logo-icon">📁</span><span class="logo-name">Google Drive</span></div>
-        <div class="marquee-item"><span class="logo-icon">🚀</span><span class="logo-name">Apollo.io</span></div>
-        <div class="marquee-item"><span class="logo-icon">📧</span><span class="logo-name">SmartLead</span></div>
-        <div class="marquee-item"><span class="logo-icon">🔶</span><span class="logo-name">HubSpot</span></div>
-        <div class="marquee-item"><span class="logo-icon">🤖</span><span class="logo-name">OpenAI</span></div>
-        <div class="marquee-item"><span class="logo-icon">⚡</span><span class="logo-name">Claude / Anthropic</span></div>
-        <div class="marquee-item"><span class="logo-icon">🔄</span><span class="logo-name">Make</span></div>
-        <div class="marquee-item"><span class="logo-icon">📅</span><span class="logo-name">Cal.com</span></div>
-        <div class="marquee-item"><span class="logo-icon">▲</span><span class="logo-name">Vercel</span></div>
-        <!-- Duplicate for seamless loop -->
-        <div class="marquee-item"><span class="logo-icon">📊</span><span class="logo-name">Google Sheets</span></div>
-        <div class="marquee-item"><span class="logo-icon">📁</span><span class="logo-name">Google Drive</span></div>
-        <div class="marquee-item"><span class="logo-icon">🚀</span><span class="logo-name">Apollo.io</span></div>
-        <div class="marquee-item"><span class="logo-icon">📧</span><span class="logo-name">SmartLead</span></div>
-        <div class="marquee-item"><span class="logo-icon">🔶</span><span class="logo-name">HubSpot</span></div>
-        <div class="marquee-item"><span class="logo-icon">🤖</span><span class="logo-name">OpenAI</span></div>
-        <div class="marquee-item"><span class="logo-icon">⚡</span><span class="logo-name">Claude / Anthropic</span></div>
-        <div class="marquee-item"><span class="logo-icon">🔄</span><span class="logo-name">Make</span></div>
-        <div class="marquee-item"><span class="logo-icon">📅</span><span class="logo-name">Cal.com</span></div>
-        <div class="marquee-item"><span class="logo-icon">▲</span><span class="logo-name">Vercel</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES PREVIEW -->
-  <section class="bg-dark">
+  <!-- =============================================
+       Service Preview Cards
+       ============================================= -->
+  <section class="services-section section" id="services" aria-labelledby="services-heading">
     <div class="container">
-      <div class="section-header center">
-        <span class="section-eyebrow">Core Services</span>
-        <h2 class="section-title">What We Automate</h2>
-        <p class="section-subtitle">Three AI systems that plug directly into how Miami HVAC companies already operate.</p>
+      <div class="section-header">
+        <span class="section-label">What We Build</span>
+        <h2 class="section-title" id="services-heading">AI Systems That Recover Lost Revenue</h2>
+        <p class="section-subtitle">
+          Three core automation products — built specifically for HVAC companies in Miami.
+        </p>
       </div>
+
       <div class="services-grid">
+        <!-- Card 1 -->
         <div class="service-card">
-          <span class="service-icon">📞</span>
+          <span class="service-card-icon">🎙️</span>
           <h3>AI Voice Receptionist</h3>
-          <p>Never miss an after-hours call. Our AI answers, qualifies, and books appointments 24/7 — even on weekends and holidays.</p>
-          <a href="services.html" class="learn-more">Learn more →</a>
+          <p>
+            Handles after-hours calls, qualifies leads, and books appointments — 24/7.
+            No hold music. No missed opportunities. Navi answers every call so you never lose another job to voicemail.
+          </p>
+          <a href="services.html" class="card-link">Learn More &rarr;</a>
         </div>
+
+        <!-- Card 2 -->
         <div class="service-card">
-          <span class="service-icon">⚡</span>
+          <span class="service-card-icon">📬</span>
           <h3>Lead Follow-Up Automation</h3>
-          <p>Follow up with every estimate and lead within 2 minutes. Email + SMS sequences that nurture until booked — automatically.</p>
-          <a href="services.html" class="learn-more">Learn more →</a>
+          <p>
+            Every new lead gets a follow-up within 2 minutes — not 2 days.
+            Automated SMS, email, and call sequences keep your pipeline moving while you're on the job.
+          </p>
+          <a href="services.html" class="card-link">Learn More &rarr;</a>
         </div>
+
+        <!-- Card 3 -->
         <div class="service-card">
-          <span class="service-icon">🗓️</span>
+          <span class="service-card-icon">🗓️</span>
           <h3>Dispatch &amp; Scheduling</h3>
-          <p>Emergency call routing, zone-optimized dispatch, and calendar management — all automated so your team focuses on the job.</p>
-          <a href="services.html" class="learn-more">Learn more →</a>
+          <p>
+            AI-optimized scheduling reduces drive time and increases daily jobs completed.
+            Your techs spend less time driving and more time billing.
+          </p>
+          <a href="services.html" class="card-link">Learn More &rarr;</a>
         </div>
       </div>
 
-      <!-- Industries Coming Soon -->
-      <div class="industries-section">
-        <p class="industries-label">Also coming soon</p>
-        <p class="industries-list">Roofing &bull; Plumbing &bull; Electrical &bull; Restoration &bull; Professional Services &bull; Hospitality</p>
-        <p class="industries-note">Don't see yours? <a href="#" onclick="document.getElementById('navi-bubble').click();return false;">Ask Navi</a> or <a href="https://cal.com/automate305/30min" target="_blank">book a call with Camilo</a>.</p>
+      <div class="text-center mt-xl">
+        <a href="services.html" class="btn-outline">See Full Service Details</a>
       </div>
     </div>
   </section>
 
-  <!-- CTA SECTION -->
-  <section class="cta-section">
-    <div class="container">
-      <h2>Ready to Stop Losing Revenue?</h2>
-      <p>Book a free 30-minute audit. Camilo will map your current workflow and show you exactly what's being missed.</p>
-      <a href="https://cal.com/automate305/30min" target="_blank" class="btn btn-white btn-lg">
-        Book Your Free Audit
-      </a>
+  <!-- =============================================
+       More Industries Coming Soon
+       ============================================= -->
+  <section class="section" style="background: var(--color-card-dark); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);" aria-labelledby="industries-heading">
+    <div class="container text-center">
+      <span class="section-label">Coming Soon</span>
+      <h2 class="section-title" id="industries-heading">More Industries Coming Soon</h2>
+      <p class="section-subtitle">
+        We're starting with HVAC, but AI automation works across every service business.
+        Here's who's next on our roadmap.
+      </p>
+
+      <div class="industries-list" role="list">
+        <span class="industry-tag" role="listitem">🍽️ Restaurant chains</span>
+        <span class="industry-tag" role="listitem">⚖️ Law firms</span>
+        <span class="industry-tag" role="listitem">🏠 Real estate agencies</span>
+        <span class="industry-tag" role="listitem">🏥 Medical / dental offices</span>
+        <span class="industry-tag" role="listitem">🔧 Auto repair shops</span>
+      </div>
+
+      <p class="note mt-lg">
+        Interested in your industry? <a href="contact.html" style="color: var(--color-accent);">Reach out to get on the waitlist.</a>
+      </p>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
+  <!-- =============================================
+       Social Proof Teaser
+       ============================================= -->
+  <section class="section" aria-labelledby="proof-heading">
+    <div class="container text-center">
+      <span class="section-label">Proof</span>
+      <h2 class="section-title" id="proof-heading">Real Numbers From Real HVAC Owners</h2>
+      <p class="section-subtitle">
+        We don't do vague testimonials. Here's what the data looks like.
+      </p>
+
+      <div class="services-grid" style="margin-top: var(--space-2xl);">
+        <div class="service-card text-center">
+          <div style="font-family: 'Anton', sans-serif; font-size: 56px; color: var(--color-success); letter-spacing: -0.02em;">$47K</div>
+          <p style="font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-muted-dark); margin-bottom: 8px;">recovered in 60 days</p>
+          <p style="font-size: 14px; color: var(--color-muted-dark);">South Miami HVAC company stopped losing after-hours calls.</p>
+        </div>
+
+        <div class="service-card text-center">
+          <div style="font-family: 'Anton', sans-serif; font-size: 56px; color: var(--color-success); letter-spacing: -0.02em;">89%</div>
+          <p style="font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-muted-dark); margin-bottom: 8px;">of after-hours calls booked automatically</p>
+          <p style="font-size: 14px; color: var(--color-muted-dark);">Kendall AC Repair. Before: voicemail. After: instant booking.</p>
+        </div>
+
+        <div class="service-card text-center">
+          <div style="font-family: 'Anton', sans-serif; font-size: 56px; color: var(--color-success); letter-spacing: -0.02em;">15 hrs</div>
+          <p style="font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-muted-dark); margin-bottom: 8px;">per week saved on follow-up</p>
+          <p style="font-size: 14px; color: var(--color-muted-dark);">Coral Gables Cooling. Manual follow-up fully eliminated.</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-xl">
+        <a href="proof.html" class="btn-outline">See Full Case Studies</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       CTA Section
+       ============================================= -->
+  <div class="cta-block">
+    <span class="urgency-note">Limited spots — we only take 5 new clients per month</span>
+    <h2 style="margin-top: var(--space-md);">Ready to Stop Losing Revenue?</h2>
+    <p>Book a free 30-minute workflow audit with Camilo. No pitch. Just a map of what you're missing.</p>
+    <a
+      href="https://cal.com/automate305/30min"
+      target="_blank"
+      rel="noopener"
+      class="btn-primary"
+      style="font-size: 18px; padding: 16px 36px;"
+    >
+      📅 Book a Free Audit
+    </a>
+  </div>
+
+  <!-- =============================================
+       Footer
+       ============================================= -->
+  <footer class="footer" aria-label="Site footer">
     <div class="container">
-      <div class="footer-inner">
+      <div class="footer-grid">
+        <!-- Brand column -->
         <div class="footer-brand">
           <a href="index.html" class="logo">
-            <span style="color:#6D28D9">⚡</span>AUTOMATE<span style="color:#6D28D9">305</span>
+            AUTOMATE<span class="purple">305</span> ⚡
           </a>
-          <p>AI automation for Miami HVAC pros and SMBs. Recover $3k–6k/month in lost revenue.</p>
+          <p>
+            AI automation for Miami SMBs. We help HVAC companies — and other local service businesses — recover thousands in monthly revenue through smart automation.
+          </p>
+          <p style="margin-top: var(--space-sm);">
+            &copy; 2025 Automate305. Miami, FL. All rights reserved.
+          </p>
         </div>
-        <div class="footer-links">
-          <h4>Pages</h4>
+
+        <!-- Quick links column -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
           <ul>
             <li><a href="services.html">Services</a></li>
             <li><a href="proof.html">Proof</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="https://cal.com/automate305/30min" target="_blank">Book Audit</a></li>
+            <li>
+              <a href="https://cal.com/automate305/30min" target="_blank" rel="noopener">
+                Book a Free Audit
+              </a>
+            </li>
           </ul>
         </div>
-        <div class="footer-links">
-          <h4>Service Area</h4>
+
+        <!-- Contact column -->
+        <div class="footer-col">
+          <h4>Contact</h4>
           <ul>
-            <li><a href="#">Miami-Dade</a></li>
-            <li><a href="#">Broward</a></li>
-            <li><a href="#">Palm Beach</a></li>
+            <li>
+              <a href="mailto:hello@automate305.com">hello@automate305.com</a>
+            </li>
+            <li>
+              <span style="color: var(--color-muted-dark);">Miami, FL</span>
+            </li>
+            <li>
+              <a href="https://cal.com/automate305/30min" target="_blank" rel="noopener">
+                📅 cal.com/automate305/30min
+              </a>
+            </li>
           </ul>
         </div>
       </div>
+
       <div class="footer-bottom">
-        <p>© 2026 <span class="accent">Automate305</span> — Miami AI Automation for SMBs</p>
-        <p style="font-size:0.75rem; color:#444;">Built in Miami 🌴</p>
+        <p>Built in Miami by Camilo &mdash; Automate305 &bull; AI automation that actually works for real businesses.</p>
       </div>
     </div>
   </footer>
